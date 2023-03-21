@@ -1,6 +1,5 @@
 import os
 
-
 MAX_LENGTH = 6
 # Шаблон короткого адреса из латинских букв и цифр
 SHORT_ID_REGEX = r"^[a-zA-Z0-9]+$"
