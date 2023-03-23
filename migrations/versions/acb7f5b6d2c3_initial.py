@@ -1,4 +1,4 @@
-"""Первоначальный
+"""initial
 
 Revision ID: acb7f5b6d2c3
 Revises: 

@@ -1,5 +1,6 @@
 import random
 import string
+from http import HTTPStatus
 
 from flask import render_template, redirect, flash
 
@@ -38,4 +39,4 @@ def get_unique_short_id():
 @app.route("/<string:short>", methods=("GET",))
 def get_original_link(short):
     link = URLMap.query.filter_by(short=short).first_or_404()
-    return redirect(link.original, code=302)
+    return redirect(link.original, code=HTTPStatus.FOUND)
